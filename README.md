@@ -13,7 +13,7 @@ What you need to do is connect power to your AP with at least 1A After that you 
 when you go to that address you will get the interface for Apn and now you should enter your own network and log in with your user credentials for your network and then your Ap is up and running in your network.<br>
 <img width="400"  alt="AP" src="https://media.hardwear.io/wp-content/uploads/2023/12/image2.png">
 
-# Strat upp the display from deep sleep
+# Start upp the display from deep sleep
 Now we will start up the display which is in deep sleep and to wake up the display you need to remove the batteries.<br>
 Take it easy as the cover that covers the batteries is very tight and can be difficult to remove.<br>
 When the cover is gone, remove the batteries and take a battery and carefully insert the battery in the wrong direction for about 10 seconds, then you short-circuit the battery leads (See the picture which tins should be cross-circuited)<br>
