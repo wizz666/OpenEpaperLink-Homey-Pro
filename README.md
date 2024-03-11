@@ -1,13 +1,15 @@
 # Display parsed version in Homey Pro
-This is an example on the code to use and edit for the OpenEPaperLink homey app<br> https://homey.app/sv-se/app/nl.wiggert.OpenEPaperLink/OpenEPaperLink/
-<br>The code is for Solum 2.9" display but can be modifyed to fit other displays.
+This is an example on the code to use and edit for the OpenEPaperLink homey app.<br> https://homey.app/sv-se/app/nl.wiggert.OpenEPaperLink/OpenEPaperLink/
+<br>The code is for Solum 2.9" display but can be modifyed to fit other displays.<br>
 Information regarding Json template - https://github.com/jjwbruijn/OpenEPaperLink/wiki/Json-template<br>
 This is an good online editor - https://jsonbeautifier.org/<br>
 
 Here you change the text for each part that you want to display in each section.<br>
      {"text": [10,20,"<b>Add your text here</b>","t0_14b_tf",1]},<br>
     {"text": [95,20,"<b>Here you add the card from homey</b>","t0_14b_tf",2]},<br>
-If you want to add som text or sybol after the card you can do it thats no problem like in the picture below where i added degrees °<br>
+If you want to add som text or sybols after the card you can do that.<br>
+Just do it as in the picture below that shows the code.<br>
+Here i added degrees (°) and also percent (%) and text for the the currency in my case SEK (Kr)<br>
 Add whatever you want to customize it to your needs.<br>
 Be careful not to get a lot of white space in between because it shifts the code.<br> 
 This will only appear after you have uploaded the code to your AP and it has sent the code over to your display.<br>
