@@ -5,7 +5,7 @@ Information regarding Json template - https://github.com/jjwbruijn/OpenEPaperLin
 This is an good online editor - https://jsonbeautifier.org/<br>
 Feel free to change and use it as you like.<br> 
 All credit for the code goes to Fredrik Tornell.<Br>
-<img width="500"  alt="display" src="Images/IMG_1333.png">
+<img width="500"  alt="display" src="Images/IMG_1333.png"><img width="300"  alt="display" src="Images/homey.png"><br>
 
 # AP installation
 If you bought an AP from me, it comes fully flashed and ready for installation.<br>
