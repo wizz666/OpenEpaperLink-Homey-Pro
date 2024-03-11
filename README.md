@@ -7,9 +7,11 @@ This is an good online editor - https://jsonbeautifier.org/<br>
 Here you change the text for each part that you want to display in each section.<br>
      {"text": [10,20,"<b>Add your text here</b>","t0_14b_tf",1]},<br>
     {"text": [95,20,"<b>Here you add the card from homey</b>","t0_14b_tf",2]},<br>
+If you want to add som text or sybol after the card you can do it thats no problem like in the picture below where i added degrees °<br>
+Add whatever you want to customize it to your needs.<br>
 Be careful not to get a lot of white space in between because it shifts the code.<br> 
-And it will show when you update the code to the display as it can be shifted in some direction.<br>
-Feel free to change and use it as you like.<br> 
+This will only appear after you have uploaded the code to your AP and it has sent the code over to your display.<br>
+Feel free to change and use the code as you like.<br> 
 
 All credit for the code goes to Fredrik Tornell.<Br>
 <img width="500"  alt="display" src="Images/IMG_1333.png"><img width="300"  alt="display" src="Images/homey.png"><br>
