@@ -1,10 +1,12 @@
 # Display parsed version in Homey Pro
-This is an example on the code to use and edit for the OpenEPaperLink homey app.<br> https://homey.app/sv-se/app/nl.wiggert.OpenEPaperLink/OpenEPaperLink/
-<br>The code is for Solum 2.9" display but can be modifyed to fit other displays.<br>
-Information regarding Json template - https://github.com/jjwbruijn/OpenEPaperLink/wiki/Json-template<br>
-This is an good online editor - https://jsonbeautifier.org/<br>
+### The code is for Solum 2.9" BWR and BW displays but can be modifyed to fit other displays.<br>
+This guide is for the OpenEPaperLink homey app.<br> [![Static Badge](https://img.shields.io/badge/Homey_Apps-blue)](https://homey.app/sv-se/app/nl.wiggert.OpenEPaperLink/OpenEPaperLink/)
+<br>
+Information regarding Json template <br> [![Static Badge](https://img.shields.io/badge/Json_template-grey)](https://github.com/jjwbruijn/OpenEPaperLink/wiki/Json-template)<br>
+This is an good online editor <br> [![Static Badge](https://img.shields.io/badge/JSON_Beautifier-green)](https://jsonbeautifier.org/)<br>
 
-Here you change the text for each part that you want to display in each section.<br>
+In this section you change the text and insert the card from the Homey app that you want to be displayed.<br> 
+Here you also change the positions for the text and for the card so that it fits on the display.<br>
 ```
      {"text": [10,20,"<b>Add your text here</b>","t0_14b_tf",1]},<br>
     {"text": [95,20,"<b>Here you add the card from homey</b>","t0_14b_tf",2]},<br>
@@ -39,11 +41,9 @@ When it has been found by your AP, you can choose to run one of the pre-installe
 <img width="400"  alt="Display" src="https://media.hardwear.io/wp-content/uploads/2023/12/image8.png"><br>
 
 # Ready to go :)
-Now you are ready to start using your AP and display and only your imagination sets the limits.<br>
-⭐ All credits for the pictures in this guide goes to Aaron Christophel @atc1441<br>
-
-# The OpenEPaperLink startup guide video
-#### by Aaron Christophel @atc1441<br> [![YouTube](https://custom-icon-badges.demolab.com/badge/youtube-red.svg?logo=youtube&logoSource=feather)](https://youtu.be/Etonkolz9Bs "Watch the OpenEPaperLink startup guide video")
+### Now you are ready to start using your AP and display and only your imagination sets the limits.<br>
+⭐ All credit for the pictures in this guide goes to Aaron Christophel @atc1441 [![Static Badge](https://img.shields.io/badge/Github_Page-blue)](https://github.com/atc1441)<br>
+⭐ The OpenEPaperLink startup guide video by Aaron Christophel @atc1441 [![YouTube](https://custom-icon-badges.demolab.com/badge/youtube-red.svg?logo=youtube&logoSource=feather)](https://youtu.be/Etonkolz9Bs "Watch the OpenEPaperLink startup guide video")
 
 # Support the work
 <a href="https://ko-fi.com/wizz666">☕ Buy me a coffee</a>
