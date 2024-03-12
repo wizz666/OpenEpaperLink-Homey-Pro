@@ -5,8 +5,10 @@ Information regarding Json template - https://github.com/jjwbruijn/OpenEPaperLin
 This is an good online editor - https://jsonbeautifier.org/<br>
 
 Here you change the text for each part that you want to display in each section.<br>
+```
      {"text": [10,20,"<b>Add your text here</b>","t0_14b_tf",1]},<br>
     {"text": [95,20,"<b>Here you add the card from homey</b>","t0_14b_tf",2]},<br>
+```
 If you want to add som text or sybols after the card you can do that.<br>
 Just do it as in the picture below that shows the code.<br>
 Here i added degrees (°) and also percent (%) and text for the the currency in my case SEK (Kr)<br>
@@ -41,5 +43,5 @@ Now you are ready to start using your AP and display and only your imagination s
 All credits for the pictures in this guide goes to Aaron Christophel @atc1441<br>
 
 # The OpenEPaperLink startup guide video
-by Aaron Christophel @atc1441<br>
-[<img src="https://i.ytimg.com/an_webp/Etonkolz9Bs/mqdefault_6s.webp?du=3000&sqp=CNfLu68G&rs=AOn4CLCtti1Lq3YtHxbJLc87U-xXLFP9rw" width="50%">](https://www.youtube.com/watch?v=Etonkolz9Bs "The OpenEPaperLink startup guide")
+### by Aaron Christophel @atc1441<br>
+- https://youtu.be/Etonkolz9Bs
