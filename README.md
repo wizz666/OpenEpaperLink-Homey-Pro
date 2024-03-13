@@ -20,6 +20,8 @@ This will only appear after you have uploaded the code to your AP and it has sen
 Feel free to change and use the code as you like.<br> 
 
 ⭐ All credit for the code goes to Fredrik Tornell.<Br>
+⭐ All credit for the pictures in this guide goes to Aaron Christophel @atc1441 [![Static Badge](https://img.shields.io/badge/Github_Page-blue)](https://github.com/atc1441)<br>
+
 <img width="500"  alt="display" src="Images/IMG_1333.png"><img width="300"  alt="display" src="Images/homey.png"><br>
 
 # AP installation
@@ -42,7 +44,6 @@ When it has been found by your AP, you can choose to run one of the pre-installe
 
 # Ready to go :)
 ### Now you are ready to start using your AP and display and only your imagination sets the limits.<br>
-⭐ All credit for the pictures in this guide goes to Aaron Christophel @atc1441 [![Static Badge](https://img.shields.io/badge/Github_Page-blue)](https://github.com/atc1441)<br>
 ⭐ The OpenEPaperLink startup guide video by Aaron Christophel @atc1441 [![YouTube](https://custom-icon-badges.demolab.com/badge/youtube-red.svg?logo=youtube&logoSource=feather)](https://youtu.be/Etonkolz9Bs "Watch the OpenEPaperLink startup guide video")
 
 # Support the work
