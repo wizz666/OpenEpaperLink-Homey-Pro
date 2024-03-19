@@ -46,6 +46,10 @@ When it has been found by your AP, you can choose to run one of the pre-installe
 # 3D files
 In the folder above (Case for AP) you will find 3D files for the S3_C6_NanoAP v.1 and also for S3_C6_NanoAP v.2<br>
 You will also find 3D files for wall mounts and table stands for the 2.9" BWR displays in this folder.<br>
+This is the S3_C6_NanoAP v.1            |  This is the S3_C6_NanoAP v.2
+:-------------------------:|:-------------------------:
+<img width="300"  alt="AP_v1" src="Images/AP_v1.jpg"> |  <img width="300"  alt="AP_v2" src="Images/AP_v2.jpg">
+
 
 # Ready to go :)
 ### Now you are ready to start using your AP and display and only your imagination sets the limits.<br>
