@@ -43,6 +43,10 @@ When it has been found by your AP, you can choose to run one of the pre-installe
 <img width="400"  alt="Display" src="https://media.hardwear.io/wp-content/uploads/2023/12/image7.png"><br>
 <img width="400"  alt="Display" src="https://media.hardwear.io/wp-content/uploads/2023/12/image8.png"><br>
 
+# 3D files
+In the folder above (Case for AP) you will find 3D files for the S3_C6_NanoAP v.1 and also for S3_C6_NanoAP v.2<br>
+You will also find 3D files for wall mounts and table stands for the 2.9" BWR displays in this folder.<br>
+
 # Ready to go :)
 ### Now you are ready to start using your AP and display and only your imagination sets the limits.<br>
 ⭐ The OpenEPaperLink startup guide video by Aaron Christophel @atc1441 [![YouTube](https://custom-icon-badges.demolab.com/badge/youtube-red.svg?logo=youtube&logoSource=feather)](https://youtu.be/Etonkolz9Bs "Watch the OpenEPaperLink startup guide video")
