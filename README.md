@@ -23,7 +23,10 @@ Feel free to change and use the code as you like.<br>
 ⭐ All credit for the code goes to Fredrik Tornell.<Br>
 ⭐ All credit for the pictures in this guide goes to Aaron Christophel @atc1441 [![Static Badge](https://img.shields.io/badge/Github_Page-blue)](https://github.com/atc1441)<br>
 
-<img width="500"  alt="display" src="Images/IMG_1333.png"><img width="300"  alt="display" src="Images/homey.png"><br>
+2.9" BWR display examples           |  This is how it looks in Homey
+:-------------------------:|:-------------------------:
+<img width="300"  alt="AP_v1" src="Images/Display.png"><br><img width="300"  alt="AP_v1" src="Images/Display2.jpg"> |  <img width="300"  alt="AP_v2" src="Images/homey.png">
+
 
 # AP installation
 If you bought an AP from me, it comes fully flashed and ready for installation.<br>
