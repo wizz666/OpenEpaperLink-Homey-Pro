@@ -1,4 +1,4 @@
-# Display parsed version in Homey Pro
+# Display parsed version in H<img width="16"  alt="Homey logo" src="Images/128.png">mey Pr<img width="16"  alt="Homey logo" src="Images/128.png">
 ### The code is for Solum 2.9" BWR and BW displays but can be modifyed to fit other displays.<br>
 This guide is for the OpenEPaperLink homey app.<br> [![Static Badge](https://img.shields.io/badge/Homey_Apps-blue)](https://homey.app/sv-se/app/nl.wiggert.OpenEPaperLink/OpenEPaperLink/)
 <br>
