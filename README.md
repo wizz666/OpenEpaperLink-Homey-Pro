@@ -9,8 +9,8 @@ In this section you change the text and insert the card from the Homey app that 
 Here you also change the positions for the text and for the card so that it fits on the display.<br>
 It is important that the code below is between brackets [ ] otherwise it will not work, you can see how it looks in the Sample code above.<br>
 ```
-     {"text": [10,20,"<b>Add your text here</b>","t0_14b_tf",1]},<br>
-    {"text": [95,20,"<b>Here you add the card from homey</b>","t0_14b_tf",2]},<br>
+    [ {"text": [10,20,"Add your text here","t0_14b_tf",1]},
+    {"text": [95,20,"Here you add the card from homey","t0_14b_tf",2]}, ]
 ```
 If you want to add som text or sybols after the card you can do that.<br>
 Just do it as in the picture below that shows the code.<br>
