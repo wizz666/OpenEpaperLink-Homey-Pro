@@ -7,7 +7,7 @@ This is an good online editor <br> [![Static Badge](https://img.shields.io/badge
 
 In this section you change the text and insert the card from the Homey app that you want to be displayed.<br> 
 Here you also change the positions for the text and for the card so that it fits on the display.<br>
-It is important that the code below is between brackets [ ] otherwise it will not work, you can see how it looks in the code example above.<br>
+It is important that the code below is between brackets [ ] otherwise it will not work, you can see how it looks in the Sample code above.<br>
 ```
      {"text": [10,20,"<b>Add your text here</b>","t0_14b_tf",1]},<br>
     {"text": [95,20,"<b>Here you add the card from homey</b>","t0_14b_tf",2]},<br>
@@ -47,8 +47,8 @@ When it has been found by your AP, you can choose to run one of the pre-installe
 <img width="400"  alt="Display" src="https://media.hardwear.io/wp-content/uploads/2023/12/image8.png"><br>
 
 # 3D files
-In the folder above (Case for AP) you will find 3D files for the S3_C6_NanoAP v.1 and also for S3_C6_NanoAP v.2<br>
-You will also find 3D files for wall mounts and table stands for the 2.9" BWR displays in this folder.<br>
+In the folder above (3D Case for Nano AP v1 and v2) you will find 3D files for the S3_C6_NanoAP v.1 and also for S3_C6_NanoAP v.2<br>
+You will also find 3D files for wall mounts and table stands for the 2.9" BWR displays in this folder (3D Stand and holder for the display).<br>
 This is the S3_C6_NanoAP v.1            |  This is the S3_C6_NanoAP v.2
 :-------------------------:|:-------------------------:
 <img width="300"  alt="AP_v1" src="Images/AP_v1.jpg"> |  <img width="300"  alt="AP_v2" src="Images/AP_v2.jpg">
