@@ -22,6 +22,8 @@ Feel free to change and use the code as you like.<br>
 
 ⭐ All credit for the code goes to Fredrik Tornell.<Br>
 ⭐ All credit for the pictures in this guide goes to Aaron Christophel @atc1441 [![Static Badge](https://img.shields.io/badge/Github_Page-blue)](https://github.com/atc1441)<br>
+⭐ For Home Assistant users [![Static Badge](https://img.shields.io/badge/Home_Assistant-%20integration-blue?logo=homeassistant)](https://github.com/wizz666/OpenEpaperLink-Homey-Pro/blob/main/Integration%20for%20Home%20Assistant.md)
+
 
 2.9" BWR display examples           |  This is how it looks in Homey
 :-------------------------:|:-------------------------:
