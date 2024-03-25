@@ -49,8 +49,9 @@ When it has been found by your AP, you can choose to run one of the pre-installe
 <img width="400"  alt="Display" src="https://media.hardwear.io/wp-content/uploads/2023/12/image8.png"><br>
 
 # 3D files
-In the folder above (3D Case for Nano AP v1 and v2) you will find 3D files for the S3_C6_NanoAP v.1 and also for S3_C6_NanoAP v.2<br>
-You will also find 3D files for wall mounts and table stands for the 2.9" BWR displays in this folder (3D Stand and holder for the display).<br>
+Click on the link to get to [3D Case for Nano AP v1 and v2](https://github.com/wizz666/OpenEpaperLink-Homey-Pro/tree/main/3D%20Case%20for%20Nano%20AP%20v1%20and%20v2)
+here you will find 3D files for the S3_C6_NanoAP v.1 and also for S3_C6_NanoAP v.2<br>
+You will also find 3D files for wall mounts and table stands for the 2.9" BWR displays in this link [3D Stand and holder for the display](https://github.com/wizz666/OpenEpaperLink-Homey-Pro/tree/main/3D%20Stand%20and%20holder%20for%20the%20display).<br>
 This is the S3_C6_NanoAP v.1            |  This is the S3_C6_NanoAP v.2
 :-------------------------:|:-------------------------:
 <img width="300"  alt="AP_v1" src="Images/AP_v1.jpg"> |  <img width="300"  alt="AP_v2" src="Images/AP_v2.jpg">
