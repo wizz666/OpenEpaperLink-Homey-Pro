@@ -57,7 +57,7 @@ This is the S3_C6_NanoAP v.1            |  This is the S3_C6_NanoAP v.2
 <img width="300"  alt="AP_v1" src="Images/AP_v1.jpg"> |  <img width="300"  alt="AP_v2" src="Images/AP_v2.jpg">
 
 
-# Ready to go :)
+# Ready to go <img width="76"  alt="Ok" src="Images/ok.png">
 ### Now you are ready to start using your AP and display and only your imagination sets the limits.<br>
 ⭐ The OpenEPaperLink startup guide video by Aaron Christophel @atc1441 [![YouTube](https://custom-icon-badges.demolab.com/badge/youtube-red.svg?logo=youtube&logoSource=feather)](https://youtu.be/Etonkolz9Bs "Watch the OpenEPaperLink startup guide video")
 
