@@ -12,7 +12,10 @@ It works perfectly fine to run in Home Assistant and that generates what I want 
 This after I implemented Homey Pro with Home Assistant to get values from Homey pro and be able to use them in Home Assistant.<br>
 This was only possible after I followed this guide on how to connect Homey pro with Home assistant after a successful connection using MQTT.<br>
 [![Static Badge](https://img.shields.io/badge/Homey%20pro%20%2B%20Home%20Assistant%20guide-blue?logo=github)](https://community.homey.app/t/tutorial-pro-how-to-integrate-home-assistant-with-homey/92641)<br>
-Put in your Display id in the code and add your own sensors to the file. 
+The extra functions in this file is the arrow that turns red and face downwards if the current price is below 1Kr and turns upwards if the current price is over 1Kr and also then changes the arrow to black.<br>
+Likewise, with the current price that changes color according to the price.<br>
+
+Put in your Display ID in the code and add your own sensors to the code and you are good to go. 
 
 ```
     service: open_epaper_link.drawcustom
