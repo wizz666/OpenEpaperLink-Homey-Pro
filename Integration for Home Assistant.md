@@ -15,7 +15,11 @@ This was only possible after I followed this guide on how to connect Homey pro w
 The extra functions in this file is the arrow that turns red and face downwards if the current price is below 1Kr and turns upwards if the current price is over 1Kr and also then changes the arrow to black.<br>
 Likewise, with the current price that changes color according to the price.<br>
 
-Put in your Display ID in the code and add your own sensors to the code and you are good to go. 
+Put in your Display ID in the code and add your own sensors to it and you are good to go. <br>
+Here is an example of one of my displays running the below code with some modifications.<br>
+I will post the code when I am satisfied with the result.<br>
+
+<img width="400"  alt="Display" src="Images/ha_display.png"><br>
 
 ```
     service: open_epaper_link.drawcustom
