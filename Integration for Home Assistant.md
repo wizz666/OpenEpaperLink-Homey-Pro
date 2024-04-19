@@ -17,7 +17,7 @@ Likewise, with the current price that changes color according to the price.<br>
 
 Put in your Display ID in the code and add your own sensors to it and you are good to go. <br>
 Here is an example of one of my displays running the below code with some modifications.<br>
-I will post the code when I am satisfied with the result.<br>
+I will post a new code when I am satisfied with the result.<br>
 
 <img width="400"  alt="Display" src="Images/ha_display.png"><br>
 
@@ -151,3 +151,8 @@ data:
       anchor: lm
 
 ```
+<img width="400"  alt="Display" src="Images/ha_display.jpeg"><br>
+
+The layout for this display abow you need to add your own sensors.<br>
+You also need to have the Swedish Post Delivery integration for Home Assistant installed and configured for your postal code.<br>
+[Here is the code for the layout](https://github.com/wizz666/OpenEpaperLink-Homey-Pro/blob/main/Sample%20code%20Home%20Assistant)<br>
