@@ -1,0 +1,170 @@
+service: open_epaper_link.drawcustom
+target:
+  entity_id:
+    - open_epaper_link.Add your display ID
+data:
+  dry-run: false
+  background: white
+  rotate: 0
+  ttl: 300
+  payload:
+    - type: line
+      fill: red
+      width: 1
+      x_start: 135
+      y_start: 50
+      x_end: 135
+      y_end: 110
+    - type: line
+      fill: black
+      width: 1
+      x_start: 0
+      y_start: 110
+      x_end: 400
+      y_end: 110
+    - type: line
+      fill: black
+      width: 1
+      x_start: 0
+      y_start: 50
+      x_end: 400
+      y_end: 50
+    - type: text
+      value: >-
+        {% set today = now().weekday() %}
+        {% set is_even_week = (now().isocalendar()[1] % 2 == 0) %}
+        {% set trash_day1 = 3 %} {# torsdag #}
+        {% set trash_day2 = 4 %} {# fredag #}
+        {% if today == trash_day2 and is_even_week %}
+          Soptömning idag:
+        {% elif today == trash_day1 and not is_even_week %}
+          Soptömning idag:
+        {% elif today == (trash_day2 - 1) and is_even_week %}
+          Soptömning imorgon:
+        {% elif today == (trash_day1 - 1) and not is_even_week %}
+          Soptömning imorgon:
+        {% else %}
+          Ingen soptömning idag:
+        {% endif %}
+      font: ../../media/GothamRnd-Bold.ttf
+      x: 80
+      y: 5
+      size: 15
+      color: "{% if today == trash_day1 and not is_even_week or today == trash_day2 and is_even_week %} black {% else %} red {% endif %}"
+    - type: text
+      value: >-
+        {% if today == trash_day1 and not is_even_week %}
+          Kärl 1
+        {% elif today == trash_day2 and is_even_week %}
+          Kärl 2
+        {% endif %}
+      x: 110
+      y: 25
+      size: 20
+      color: "{% if today == trash_day1 and not is_even_week or today == trash_day2 and is_even_week %} black {% else %} red {% endif %}"
+    - type: icon
+      value: >-
+        {% if today == trash_day1 and not is_even_week or today == trash_day2 and is_even_week %}
+          trash-can
+        {% endif %}
+      x: 90
+      y: 22
+      size: 20
+      color: "{% if today == trash_day1 and not is_even_week or today == trash_day2 and is_even_week %} red {% else %} black {% endif %}"
+    - type: icon
+      value: |-
+        {% if states('sensor.mail_delivery_') | int == 0 %}
+          mailbox
+        {% else %}
+          mailbox-open
+        {% endif %}
+      x: 285
+      y: 60
+      size: 15
+      color: |-
+        {% if states('sensor.mail_delivery_') | int == 0 %}
+          red
+        {% else %}
+          black
+        {% endif %}
+      anchor: mm
+    - type: text
+      value: |-
+        {% if states('sensor.mail_delivery_') | int == 0 %}
+          Post i lådan
+        {% else %}
+          Ingen post idag
+        {% endif %}
+      font: ../../media/GothamRnd-Bold.ttf
+      x: 205
+      y: 60
+      size: 15
+      color: black
+      anchor: mm
+    - type: text
+      value: Elpris -
+      font: ../../media/GothamRnd-Bold.ttf
+      x: 35
+      y: 60
+      size: 15
+      color: black
+      anchor: mm
+    - type: text
+      value: >-
+        {% set electricity_price_attr =
+        state_attr('sensor.electricity_price', 'low_price') %}
+        {% set electricity_price_state =
+        states('sensor.electricity_price') | round(2) %}  {%
+        if electricity_price_attr is not none and electricity_price_attr |
+        round(2) == true %}
+          {{ electricity_price_state }}
+        {% else %}
+          {% if electricity_price_state < 1 %}
+            {{ electricity_price_state }}
+          {% else %}
+            {{ electricity_price_state }}
+          {% endif %}
+        {% endif %}
+      font: ../../media/GothamRnd-Bold.ttf
+      x: 70
+      y: 80
+      size: 15
+      color: red
+      anchor: mm
+    - type: text
+      value: >-
+        {{ 'öre/kWh' if states('sensor.electricity_price') |
+        round(2) < 1 else 'Kr/kWh' }}
+      font: ../../media/GothamRnd-Bold.ttf
+      x: 70
+      y: 100
+      size: 15
+      color: black
+      anchor: mm
+    - type: text
+      value: >-
+        {{ now().strftime("%B") }} hittills: {{ states('sensor.monthly_cost') | round(0) }} kr
+      font: ../../media/GothamRnd-Bold.ttf
+      x: 2
+      y: 121
+      size: 13
+      color: black
+      anchor: lm
+    - type: text
+      value: >-
+         & {{ states('sensor.pulse_pulse_kwh_this_month') | round(0) }} kWh
+      font: ../../media/GothamRnd-Bold.ttf
+      x: 137
+      y: 121
+      size: 13
+      color: black
+      anchor: lm
+    # The clock
+    - type: text
+      value: "Kl: {{ now() | as_timestamp() | timestamp_custom('%H:%M', true) }}"
+      font: ../../media/GothamRnd-Bold.ttf
+      x: 97
+      y: 60
+      size: 15
+      color: black
+      anchor: mm
