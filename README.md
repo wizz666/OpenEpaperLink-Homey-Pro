@@ -61,6 +61,11 @@ This is the S3_C6_NanoAP v.1            |  This is the S3_C6_NanoAP v.2
 :-------------------------:|:-------------------------:
 <img width="300"  alt="AP_v1" src="Images/AP_v1.jpg"> |  <img width="300"  alt="AP_v2" src="Images/AP_v2.jpg">
 
+# 3D files (HOLDER & STANDS)
+Click on the link below<br>
+3D files [holder and stands for every tag. 1.54", 2.9" and 4.2](https://github.com/OpenEPaperLink/OpenEPaperLink/tree/master/Hardware/3D-Printed)<br>
+
+<img src="https://github.com/slimline33/OpenEPaperLink/assets/3323812/836875fd-7a5f-4a14-8cbe-e83381784879" width="650" height="400">
 
 # Ready to go <img width="76"  alt="Ok" src="Images/ok.png">
 ### Now you are ready to start using your AP and display and only your imagination sets the limits.<br>
