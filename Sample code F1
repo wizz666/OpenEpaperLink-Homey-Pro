@@ -1,0 +1,469 @@
+target:
+  entity_id: open_epaper_link.(Sätt ditt eget ID här)
+data:
+  background: white
+  dry-run: false
+  ttl: 60
+  rotate: 0
+  payload:
+    - type: dlimg
+      url: https://logos-world.net/wp-content/uploads/2023/12/F1-Logo.png
+      x: 0
+      "y": -8
+      xsize: 150
+      ysize: 53
+      rotate: 0
+    - type: text
+      value: DRIVERS' STANDINGS
+      font: ../../media/segoe-ui-regular.ttf
+      x: 234
+      "y": 6
+      size: 9
+      color: red
+      anchor: mm
+    - type: text
+      value: |-
+        {% set ds = state_attr('sensor.f1_driver_standings','driver_standings')
+                     or state_attr('sensor.f12025_driver_standings','driver_standings') %}
+        {% if ds and ds|count>0 %}
+          {% set d = ds[0] %}
+          {% set drv = d.get('Driver') if d.get is defined else None %}
+          {% set code = (drv.get('code') if drv and drv.get is defined else '') or (d.get('driver_code') if d.get is defined else '') %}
+          {{ '1 ' ~ (code|string)[:3]|upper }}
+        {% else %}—{% endif %}
+      font: ../../media/segoe-ui-regular.ttf
+      x: 192
+      "y": 18
+      size: 10
+      color: black
+      anchor: lm
+    - type: text
+      value: >-
+        {% set ds=state_attr('sensor.f1_driver_standings','driver_standings')
+                  or state_attr('sensor.f12025_driver_standings','driver_standings') %}
+        {% if ds and ds|count>0 %}{{ (ds[0].get('points') if ds[0].get is
+        defined else '')|string ~ 'p' }}{% endif %}
+      font: ../../media/segoe-ui-regular.ttf
+      x: 276
+      "y": 18
+      size: 10
+      color: black
+      anchor: rm
+    - type: text
+      value: |-
+        {% set ds=state_attr('sensor.f1_driver_standings','driver_standings')
+                  or state_attr('sensor.f12025_driver_standings','driver_standings') %}
+        {% if ds and ds|count>1 %}
+          {% set d = ds[1] %}
+          {% set drv = d.get('Driver') if d.get is defined else None %}
+          {% set code = (drv.get('code') if drv and drv.get is defined else '') or (d.get('driver_code') if d.get is defined else '') %}
+          {{ '2 ' ~ (code|string)[:3]|upper }}
+        {% else %}—{% endif %}
+      font: ../../media/segoe-ui-regular.ttf
+      x: 192
+      "y": 28
+      size: 10
+      color: black
+      anchor: lm
+    - type: text
+      value: >-
+        {% set ds=state_attr('sensor.f1_driver_standings','driver_standings')
+                  or state_attr('sensor.f12025_driver_standings','driver_standings') %}
+        {% if ds and ds|count>1 %}{{ (ds[1].get('points') if ds[1].get is
+        defined else '')|string ~ 'p' }}{% endif %}
+      font: ../../media/segoe-ui-regular.ttf
+      x: 276
+      "y": 28
+      size: 10
+      color: black
+      anchor: rm
+    - type: text
+      value: |-
+        {% set ds=state_attr('sensor.f1_driver_standings','driver_standings')
+                  or state_attr('sensor.f12025_driver_standings','driver_standings') %}
+        {% if ds and ds|count>2 %}
+          {% set d = ds[2] %}
+          {% set drv = d.get('Driver') if d.get is defined else None %}
+          {% set code = (drv.get('code') if drv and drv.get is defined else '') or (d.get('driver_code') if d.get is defined else '') %}
+          {{ '3 ' ~ (code|string)[:3]|upper }}
+        {% else %}—{% endif %}
+      font: ../../media/segoe-ui-regular.ttf
+      x: 192
+      "y": 38
+      size: 10
+      color: black
+      anchor: lm
+    - type: text
+      value: >-
+        {% set ds=state_attr('sensor.f1_driver_standings','driver_standings')
+                  or state_attr('sensor.f12025_driver_standings','driver_standings') %}
+        {% if ds and ds|count>2 %}{{ (ds[2].get('points') if ds[2].get is
+        defined else '')|string ~ 'p' }}{% endif %}
+      font: ../../media/segoe-ui-regular.ttf
+      x: 276
+      "y": 38
+      size: 10
+      color: black
+      anchor: rm
+    - type: text
+      value: |-
+        {% set ds=state_attr('sensor.f1_driver_standings','driver_standings')
+                  or state_attr('sensor.f12025_driver_standings','driver_standings') %}
+        {% if ds and ds|count>3 %}
+          {% set d = ds[3] %}
+          {% set drv = d.get('Driver') if d.get is defined else None %}
+          {% set code = (drv.get('code') if drv and drv.get is defined else '') or (d.get('driver_code') if d.get is defined else '') %}
+          {{ '4 ' ~ (code|string)[:3]|upper }}
+        {% else %}—{% endif %}
+      font: ../../media/segoe-ui-regular.ttf
+      x: 192
+      "y": 48
+      size: 10
+      color: black
+      anchor: lm
+    - type: text
+      value: >-
+        {% set ds=state_attr('sensor.f1_driver_standings','driver_standings')
+                  or state_attr('sensor.f12025_driver_standings','driver_standings') %}
+        {% if ds and ds|count>3 %}{{ (ds[3].get('points') if ds[3].get is
+        defined else '')|string ~ 'p' }}{% endif %}
+      font: ../../media/segoe-ui-regular.ttf
+      x: 276
+      "y": 48
+      size: 10
+      color: black
+      anchor: rm
+    - type: text
+      value: |-
+        {% set ds=state_attr('sensor.f1_driver_standings','driver_standings')
+                  or state_attr('sensor.f12025_driver_standings','driver_standings') %}
+        {% if ds and ds|count>4 %}
+          {% set d = ds[4] %}
+          {% set drv = d.get('Driver') if d.get is defined else None %}
+          {% set code = (drv.get('code') if drv and drv.get is defined else '') or (d.get('driver_code') if d.get is defined else '') %}
+          {{ '5 ' ~ (code|string)[:3]|upper }}
+        {% else %}—{% endif %}
+      font: ../../media/segoe-ui-regular.ttf
+      x: 192
+      "y": 58
+      size: 10
+      color: black
+      anchor: lm
+    - type: text
+      value: >-
+        {% set ds=state_attr('sensor.f1_driver_standings','driver_standings')
+                  or state_attr('sensor.f12025_driver_standings','driver_standings') %}
+        {% if ds and ds|count>4 %}{{ (ds[4].get('points') if ds[4].get is
+        defined else '')|string ~ 'p' }}{% endif %}
+      font: ../../media/segoe-ui-regular.ttf
+      x: 276
+      "y": 58
+      size: 10
+      color: black
+      anchor: rm
+    - type: text
+      value: CONSTRUCTOR STANDING
+      font: ../../media/segoe-ui-regular.ttf
+      x: 234
+      "y": 70
+      size: 9
+      color: red
+      anchor: mm
+    - type: text
+      value: >-
+        {% set cs =
+        state_attr('sensor.f1_constructor_standings','constructor_standings')
+                    or state_attr('sensor.f12025_constructor_standings','constructor_standings') %}
+        {% if cs and cs|count>0 %}
+          {% set c = cs[0] %}
+          {% set cons = c.get('Constructor') if c.get is defined else None %}
+          {% set name = (cons.get('name') if cons and cons.get is defined else '')
+                         or (c.get('constructor_name') if c.get is defined else '')
+                         or (c.get('name') if c.get is defined else '') %}
+          {{ '1 ' ~ (name|string)[:14] }}
+        {% else %}—{% endif %}
+      font: ../../media/segoe-ui-regular.ttf
+      x: 192
+      "y": 80
+      size: 10
+      color: black
+      anchor: lm
+    - type: text
+      value: >-
+        {% set cs =
+        state_attr('sensor.f1_constructor_standings','constructor_standings')
+                    or state_attr('sensor.f12025_constructor_standings','constructor_standings') %}
+        {% if cs and cs|count>0 %}{{ (cs[0].get('points') if cs[0].get is
+        defined else '')|string ~ 'p' }}{% endif %}
+      font: ../../media/segoe-ui-regular.ttf
+      x: 276
+      "y": 80
+      size: 10
+      color: black
+      anchor: rm
+    - type: text
+      value: >-
+        {% set cs =
+        state_attr('sensor.f1_constructor_standings','constructor_standings')
+                    or state_attr('sensor.f12025_constructor_standings','constructor_standings') %}
+        {% if cs and cs|count>1 %}
+          {% set c = cs[1] %}
+          {% set cons = c.get('Constructor') if c.get is defined else None %}
+          {% set name = (cons.get('name') if cons and cons.get is defined else '')
+                         or (c.get('constructor_name') if c.get is defined else '')
+                         or (c.get('name') if c.get is defined else '') %}
+          {{ '2 ' ~ (name|string)[:14] }}
+        {% else %}—{% endif %}
+      font: ../../media/segoe-ui-regular.ttf
+      x: 192
+      "y": 90
+      size: 10
+      color: black
+      anchor: lm
+    - type: text
+      value: >-
+        {% set cs =
+        state_attr('sensor.f1_constructor_standings','constructor_standings')
+                    or state_attr('sensor.f12025_constructor_standings','constructor_standings') %}
+        {% if cs and cs|count>1 %}{{ (cs[1].get('points') if cs[1].get is
+        defined else '')|string ~ 'p' }}{% endif %}
+      font: ../../media/segoe-ui-regular.ttf
+      x: 276
+      "y": 90
+      size: 10
+      color: black
+      anchor: rm
+    - type: text
+      value: >-
+        {% set cs =
+        state_attr('sensor.f1_constructor_standings','constructor_standings')
+                    or state_attr('sensor.f12025_constructor_standings','constructor_standings') %}
+        {% if cs and cs|count>2 %}
+          {% set c = cs[2] %}
+          {% set cons = c.get('Constructor') if c.get is defined else None %}
+          {% set name = (cons.get('name') if cons and cons.get is defined else '')
+                         or (c.get('constructor_name') if c.get is defined else '')
+                         or (c.get('name') if c.get is defined else '') %}
+          {{ '3 ' ~ (name|string)[:14] }}
+        {% else %}—{% endif %}
+      font: ../../media/segoe-ui-regular.ttf
+      x: 192
+      "y": 100
+      size: 10
+      color: black
+      anchor: lm
+    - type: text
+      value: >-
+        {% set cs =
+        state_attr('sensor.f1_constructor_standings','constructor_standings')
+                    or state_attr('sensor.f12025_constructor_standings','constructor_standings') %}
+        {% if cs and cs|count>2 %}{{ (cs[2].get('points') if cs[2].get is
+        defined else '')|string ~ 'p' }}{% endif %}
+      font: ../../media/segoe-ui-regular.ttf
+      x: 276
+      "y": 100
+      size: 10
+      color: black
+      anchor: rm
+    - type: text
+      value: Nästa race
+      font: ../../media/segoe-ui-regular.ttf
+      x: 6
+      "y": 44
+      size: 12
+      color: black
+      anchor: lm
+    - type: text
+      value: >-
+        {% set rn = state_attr('sensor.f1_next_race','race_name') %} {% set cir
+        = state_attr('sensor.f1_next_race','circuit') %} {% set title = rn if rn
+        not in [None,'','unknown','unavailable'] else cir %} {% set title =
+        title if title not in [None,'','unknown','unavailable'] else 'Ingen
+        F1-data' %} {{ title[:34] ~ ('…' if title|length > 34 else '') }}
+      font: ../../media/segoe-ui-regular.ttf
+      x: 6
+      "y": 56
+      size: 11
+      color: red
+      anchor: lm
+    - type: text
+      value: |-
+        {% set q_dt = state_attr('sensor.f1_next_race','qualifying_start_local')
+            or state_attr('sensor.f1_next_race','qualifying_start')
+            or state_attr('sensor.f1_next_race','quali_start_local')
+            or state_attr('sensor.f1_next_race','quali_start') %}
+        {% if q_dt not in [None,'','unknown','unavailable'] %}
+          {{ 'Kval: ' ~ as_datetime(q_dt).astimezone().strftime('%y-%m-%d') }}
+        {% else %}Kval: —{% endif %}
+      font: ../../media/segoe-ui-regular.ttf
+      x: 6
+      "y": 72
+      size: 11
+      color: black
+      anchor: lm
+    - type: text
+      value: |-
+        {% set q_dt = state_attr('sensor.f1_next_race','qualifying_start_local')
+            or state_attr('sensor.f1_next_race','qualifying_start')
+            or state_attr('sensor.f1_next_race','quali_start_local')
+            or state_attr('sensor.f1_next_race','quali_start') %}
+        {% if q_dt not in [None,'','unknown','unavailable'] %}
+          {% set dt = as_datetime(q_dt).astimezone() %}
+          {% set delta = (dt - now()).total_seconds() %}
+          {% if delta>0 %}
+            {% set d=(delta//86400)|int %}{% set h=((delta%86400)//3600)|int %}
+            {{ ('om ' ~ d ~ 'd ' ~ h ~ 'h')|trim }}
+          {% endif %}
+        {% endif %}
+      font: ../../media/segoe-ui-regular.ttf
+      x: 90
+      "y": 72
+      size: 11
+      color: red
+      anchor: lm
+    - type: text
+      value: |-
+        {% set s_dt = state_attr('sensor.f1_next_race','sprint_start_local')
+            or state_attr('sensor.f1_next_race','sprint_start')
+            or state_attr('sensor.f1_next_race','sprint_shootout_start_local')
+            or state_attr('sensor.f1_next_race','sprint_shootout_start') %}
+        {% if s_dt not in [None,'','unknown','unavailable'] %}
+          {{ 'Sprint: ' ~ as_datetime(s_dt).astimezone().strftime('%y-%m-%d') }}
+        {% else %}{{ '' }}{% endif %}
+      font: ../../media/segoe-ui-regular.ttf
+      x: 6
+      "y": |-
+        {% set s_dt = state_attr('sensor.f1_next_race','sprint_start_local')
+            or state_attr('sensor.f1_next_race','sprint_start')
+            or state_attr('sensor.f1_next_race','sprint_shootout_start_local')
+            or state_attr('sensor.f1_next_race','sprint_shootout_start') %}
+        {{ 86 if s_dt not in [None,'','unknown','unavailable'] else 9999 }}
+      size: 11
+      color: black
+      anchor: lm
+    - type: text
+      value: |-
+        {% set s_dt = state_attr('sensor.f1_next_race','sprint_start_local')
+            or state_attr('sensor.f1_next_race','sprint_start')
+            or state_attr('sensor.f1_next_race','sprint_shootout_start_local')
+            or state_attr('sensor.f1_next_race','sprint_shootout_start') %}
+        {% if s_dt not in [None,'','unknown','unavailable'] %}
+          {% set dt = as_datetime(s_dt).astimezone() %}
+          {% set delta = (dt - now()).total_seconds() %}
+          {% if delta>0 %}
+            {% set d=(delta//86400)|int %}{% set h=((delta%86400)//3600)|int %}
+            {{ ('om ' ~ d ~ 'd ' ~ h ~ 'h')|trim }}
+          {% endif %}
+        {% endif %}
+      font: ../../media/segoe-ui-regular.ttf
+      x: 90
+      "y": |-
+        {% set s_dt = state_attr('sensor.f1_next_race','sprint_start_local')
+            or state_attr('sensor.f1_next_race','sprint_start')
+            or state_attr('sensor.f1_next_race','sprint_shootout_start_local')
+            or state_attr('sensor.f1_next_race','sprint_shootout_start') %}
+        {{ 86 if s_dt not in [None,'','unknown','unavailable'] else 9999 }}
+      size: 11
+      color: red
+      anchor: lm
+    - type: text
+      value: |-
+        {% set s_dt = state_attr('sensor.f1_next_race','sprint_start_local')
+            or state_attr('sensor.f1_next_race','sprint_start')
+            or state_attr('sensor.f1_next_race','sprint_shootout_start_local')
+            or state_attr('sensor.f1_next_race','sprint_shootout_start') %}
+        {% set race_dt = state_attr('sensor.f1_next_race','race_start_local')
+            or state_attr('sensor.f1_next_race','race_start') %}
+        {% if race_dt not in [None,'','unknown','unavailable'] %}
+          {{ 'Race: ' ~ as_datetime(race_dt).astimezone().strftime('%y-%m-%d') }}
+        {% else %}Race: —{% endif %}
+      font: ../../media/segoe-ui-regular.ttf
+      x: 6
+      "y": |-
+        {% set s_dt = state_attr('sensor.f1_next_race','sprint_start_local')
+            or state_attr('sensor.f1_next_race','sprint_start')
+            or state_attr('sensor.f1_next_race','sprint_shootout_start_local')
+            or state_attr('sensor.f1_next_race','sprint_shootout_start') %}
+        {{ 100 if s_dt not in [None,'','unknown','unavailable'] else 86 }}
+      size: 11
+      color: black
+      anchor: lm
+    - type: text
+      value: |-
+        {% set race_dt = state_attr('sensor.f1_next_race','race_start_local')
+            or state_attr('sensor.f1_next_race','race_start') %}
+        {% if race_dt not in [None,'','unknown','unavailable'] %}
+          {% set dt = as_datetime(race_dt).astimezone() %}
+          {% set delta = (dt - now()).total_seconds() %}
+          {% if delta>0 %}
+            {% set d=(delta//86400)|int %}{% set h=((delta%86400)//3600)|int %}
+            {{ ('om ' ~ d ~ 'd ' ~ h ~ 'h')|trim }}
+          {% endif %}
+        {% endif %}
+      font: ../../media/segoe-ui-regular.ttf
+      x: 90
+      "y": |-
+        {% set s_dt = state_attr('sensor.f1_next_race','sprint_start_local')
+            or state_attr('sensor.f1_next_race','sprint_start')
+            or state_attr('sensor.f1_next_race','sprint_shootout_start_local')
+            or state_attr('sensor.f1_next_race','sprint_shootout_start') %}
+        {{ 100 if s_dt not in [None,'','unknown','unavailable'] else 86 }}
+      size: 11
+      color: red
+      anchor: lm
+    - type: text
+      value: >-
+        {% set track = state_attr('sensor.f1_last_race_results','circuit')
+                       or state_attr('sensor.f1_last_race_results','circuit_name')
+                       or state_attr('sensor.f1_last_race_results','track')
+                       or state_attr('sensor.f1_last_race_results','track_name') %}
+        {% if not track %}
+          {% set races = state_attr('sensor.f1_last_race_results','Races') %}
+          {% if races and races|count>0 %}
+            {% set c = races[0].get('Circuit') or races[0].get('circuit') %}
+            {% if c %}{% set track = c.get('circuitName') or c.get('name') %}{% endif %}
+            {% if not track %}{% set track = races[0].get('raceName') %}{% endif %}
+          {% endif %}
+        {% endif %} {{ (track|string)[:34] ~ ('…' if (track|string)|length>34
+        else '') }}
+      font: ../../media/segoe-ui-regular.ttf
+      x: 6
+      "y": 110
+      size: 12
+      color: red
+      anchor: lm
+    - type: text
+      value: >-
+        {% set raw = state_attr('sensor.f1_last_race_results','results')
+                     or state_attr('sensor.f1_last_race_results','race_results')
+                     or state_attr('sensor.f1_last_race_results','last_race_results') %}
+        {% set res = (raw|from_json) if (raw is string) else raw %} {% set ns =
+        namespace(p1='',p2='',p3='') %} {% for i in [0,1,2] %}
+          {% if res and res|count>i %}
+            {% set r = res[i] %}
+            {% set drv = r.get('Driver') if r.get is defined else None %}
+            {% set fam = (drv.get('familyName') if drv and drv.get is defined else '') %}
+            {% if not fam %}
+              {% set name = (r.get('name') if r.get is defined else '') or (r.get('driver') if r.get is defined else '') %}
+              {% set fam = (name|string).split(' ')|last %}
+            {% endif %}
+            {% set fam = (fam|string).replace('{','').replace('}','')|trim %}
+            {% if i==0 %}{% set ns.p1 = fam %}{% elif i==1 %}{% set ns.p2 = fam %}{% else %}{% set ns.p3 = fam %}{% endif %}
+          {% endif %}
+        {% endfor %} {{ 'P1 ' ~ (ns.p1 or '—') ~ '   P2 ' ~ (ns.p2 or '—') ~ '  
+        P3 ' ~ (ns.p3 or '—') }}
+      font: ../../media/segoe-ui-regular.ttf
+      x: 6
+      "y": 122
+      size: 11
+      color: black
+      anchor: lm
+    - type: text
+      value: "{{ now() | as_timestamp() | timestamp_custom('%H:%M') }}"
+      font: ../../media/segoe-ui-regular.ttf
+      x: 290
+      "y": 122
+      size: 10
+      color: black
+      anchor: rm
+action: open_epaper_link.drawcustom
