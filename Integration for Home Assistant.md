@@ -156,3 +156,9 @@ data:
 The layout for this display abow you need to add your own sensors.<br>
 You also need to have the Swedish Post Delivery integration for Home Assistant installed and configured for your postal code.<br>
 [Here is the code for the layout](https://github.com/wizz666/OpenEpaperLink-Homey-Pro/blob/main/Sample%20code%20Home%20Assistant)<br>
+
+<img width="400"  alt="Display" src="Images/F1.jpg"><br>
+
+The layout for this display abow you need to add the sensors in HA and use it like the example code below.<br>
+[Here you find the F1 Sensor for Home Assistant](https://github.com/Nicxe/f1_sensor)<br>
+[Here is the example code for the layout](https://github.com/wizz666/OpenEpaperLink-Homey-Pro/blob/main/Sample%20code%20F1)<br>
