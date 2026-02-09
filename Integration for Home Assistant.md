@@ -158,6 +158,7 @@ You also need to have the Swedish Post Delivery integration for Home Assistant i
 [Here is the code for the layout](https://github.com/wizz666/OpenEpaperLink-Homey-Pro/blob/main/Sample%20code%20Home%20Assistant)<br>
 
 <img width="400"  alt="Display" src="Images/F1.jpg"><br>
+<img width="400"  alt="Display" src="Images/F1_2.jpg"><br>
 
 The layout for this display abow you need to add the sensors in HA and use it like the example code below.<br>
 [Here you find the F1 Sensor for Home Assistant](https://github.com/Nicxe/f1_sensor)<br>
