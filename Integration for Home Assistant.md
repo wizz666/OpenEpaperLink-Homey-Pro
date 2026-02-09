@@ -164,3 +164,4 @@ The layout for this display abow you need to add the sensors in HA and use it li
 [Here you find the F1 Sensor for Home Assistant](https://github.com/Nicxe/f1_sensor)<br>
 [Here is the example code for the layout](https://github.com/wizz666/OpenEpaperLink-Homey-Pro/blob/main/Sample%20code%20F1)<br>
 [Here is the example code for the New layout](https://github.com/wizz666/OpenEpaperLink-Homey-Pro/blob/main/New%20sample%20code%20F1)<br>
+The new layout will display time to next season and when the new season start it will revert back to the previous state.
